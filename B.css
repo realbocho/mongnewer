@@ -1,0 +1,61 @@
+body {
+    font-family: 'NanumBarunGothicBold';
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#output-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+}
+
+#output {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+}
+
+.inner-circle {
+    max-width: 200px; /* Set a maximum width as needed */
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px; /* Spacing between circles */
+    animation: spinAndFade 0.5s ease-in-out;
+    padding: 10px; /* Add padding to create space between text and border */
+}
+
+@keyframes spinAndFade {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
